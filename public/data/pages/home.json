@@ -1,0 +1,42 @@
+{
+  "bgImage": "/upload/profile-background.jpg",
+  "profileImage": "/upload/profile-picture.jpg",
+  "name": "Your Name",
+  "jobTitle": "What you do",
+  "location": "Your Location - 25.0000° N, 71.0000° W",
+  "body": "Totally optional short description about yourself, what you do and so on.",
+  "cta": {
+    "body": "Get In Touch",
+    "href": "#"
+  },
+  "socials": [
+    {
+      "type": "facebook",
+      "href": "#"
+    },
+    {
+      "type": "twitter",
+      "href": "#"
+    },
+    {
+      "type": "instagram",
+      "href": "#"
+    },
+    {
+      "type": "youtube",
+      "href": "#"
+    },
+    {
+      "type": "github",
+      "href": "#"
+    },
+    {
+      "type": "linkedin",
+      "href": "#"
+    },
+    {
+      "type": "medium",
+      "href": "#"
+    }
+  ]
+}

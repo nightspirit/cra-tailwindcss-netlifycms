@@ -1,21 +1,21 @@
 {
-  "name": "pofolio",
+  "name": "cra-tailwindcss-netlifycms",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
+    "netlify-cms-app": "^2.15.65",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
+    "react-router-dom": "^6.2.1",
+    "use-http": "^1.0.26"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-app-rewired build",
+    "build-css": "npx tailwindcss -i ./src/index.css -o ./public/admin/index.css",
+    "build-all": "npm run build-css && npm run build",
+    "eject": "react-app-rewired eject",
+    "start": "react-app-rewired start",
+    "test": "react-app-rewired test"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +34,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "react-app-rewire-multiple-entry": "^2.2.1",
+    "react-app-rewired": "^2.1.11",
+    "react-scripts": "5.0.0",
+    "tailwindcss": "^3.0.18"
   }
 }

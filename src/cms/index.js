@@ -1,12 +1,14 @@
-import CMS from "netlify-cms-app";
 import withEntry from "utils/withEntry";
 import Home from "routes/Home";
+import netlifyIdentity from "netlify-identity-widget";
+const CMS = window.CMS;
+// previews
 const HomePreview = withEntry(Home);
 
-let siteUrl = process.env.URL || "http://localhost:3000";
-if (!!process.env.DEPLOY_PRIME_URL && process.env.BRANCH !== "master") {
-  siteUrl = process.env.DEPLOY_PRIME_URL;
-}
+let siteUrl =
+  !!process.env.DEPLOY_PRIME_URL && process.env.BRANCH !== "master"
+    ? process.env.DEPLOY_PRIME_URL
+    : process.env.URL || "http://localhost:3000";
 
 const config = {
   site_url: siteUrl,
@@ -33,3 +35,6 @@ CMS.registerPreviewStyle("/admin/index.css");
 CMS.registerPreviewTemplate("home", HomePreview);
 // init
 CMS.init({ config });
+
+// init indentity
+netlifyIdentity.init();

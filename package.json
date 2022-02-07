@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "netlify-cms-app": "^2.15.65",
     "netlify-identity-widget": "^1.9.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

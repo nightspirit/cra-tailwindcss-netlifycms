@@ -1,4 +1,3 @@
-const { useDebugValue } = require("react");
 
 const multipleEntry = require("react-app-rewire-multiple-entry")([
   {

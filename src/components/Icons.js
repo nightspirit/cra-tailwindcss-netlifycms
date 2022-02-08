@@ -5,6 +5,6 @@ export { ReactComponent as TwitterIcon } from "assets/twitter.svg";
 export { ReactComponent as GithubIcon } from "assets/github.svg";
 export { ReactComponent as InstagramIcon } from "assets/instagram.svg";
 export { ReactComponent as YoutubeIcon } from "assets/youtube.svg";
-export { ReactComponent as MeduiumIcon } from "assets/medium.svg";
+export { ReactComponent as MediumIcon } from "assets/medium.svg";
 export { ReactComponent as LinkedinIcon } from "assets/linkedin.svg";
 export { ReactComponent as LinkIcon } from "assets/link-solid.svg";

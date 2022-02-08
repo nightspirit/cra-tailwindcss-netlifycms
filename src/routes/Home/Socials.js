@@ -4,7 +4,7 @@ import {
   GithubIcon,
   InstagramIcon,
   YoutubeIcon,
-  MeduiumIcon,
+  MediumIcon,
   LinkedinIcon,
   LinkIcon,
 } from "components/Icons";
@@ -16,7 +16,7 @@ const socialIcons = {
   instagram: InstagramIcon,
   github: GithubIcon,
   youtube: YoutubeIcon,
-  medium: MeduiumIcon,
+  medium: MediumIcon,
   linkedin: LinkedinIcon,
 };
 

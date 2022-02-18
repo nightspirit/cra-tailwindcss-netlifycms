@@ -1,3 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* blog */
+#progress {
+  background: linear-gradient(to right, #10b981 var(--scroll), transparent 0);
+}
+
+.post-body {
+  @apply text-base md:text-lg;
+}
+
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+  @apply py-3 md:py-4;
+}
+
+.post-body a {
+  @apply text-green-500 no-underline hover:underline;
+}
+
+.post-body p {
+  @apply py-3 md:py-4;
+}
+
+.post-body ol li {
+  @apply py-3 md:py-4 list-decimal;
+}
+
+.post-body ul li {
+  @apply py-3 md:py-4 list-disc list-inside md:list-outside marker:text-green-500;
+}
+
+.post-body blockquote {
+  @apply border-l-4 border-green-500 italic my-4 md:my-8 pl-6 md:pl-8;
+}
+
+.post-body pre {
+  @apply bg-gray-900 rounded text-white font-mono text-sm md:text-base p-3 md:p-4;
+}
+
+.post-body code {
+  @apply break-words whitespace-pre-wrap;
+}

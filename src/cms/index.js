@@ -1,9 +1,12 @@
+import CMS from "netlify-cms-app";
+
 import withEntry from "utils/withEntry";
 import Home from "routes/Home";
-import netlifyIdentity from "netlify-identity-widget";
-const CMS = window.CMS;
+import { PostBody } from "routes/Blog/Post";
+
 // previews
 const HomePreview = withEntry(Home);
+const PostPreview = withEntry(PostBody);
 
 let siteUrl =
   !!process.env.DEPLOY_PRIME_URL && process.env.BRANCH !== "master"
@@ -22,10 +25,11 @@ const config = {
   public_folder: "/upload",
   collections: [
     {
-      name: "pages",
-      label: "Pages",
+      name: "page",
+      label: "Page",
       files: [require("./pages/home")],
     },
+    require("./post"),
   ],
 };
 
@@ -33,8 +37,6 @@ const config = {
 CMS.registerPreviewStyle("/admin/index.css");
 // page preview
 CMS.registerPreviewTemplate("home", HomePreview);
+CMS.registerPreviewTemplate("post", PostPreview);
 // init
 CMS.init({ config });
-
-// init indentity
-netlifyIdentity.init();

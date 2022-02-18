@@ -8,3 +8,5 @@ export { ReactComponent as YoutubeIcon } from "assets/youtube.svg";
 export { ReactComponent as MediumIcon } from "assets/medium.svg";
 export { ReactComponent as LinkedinIcon } from "assets/linkedin.svg";
 export { ReactComponent as LinkIcon } from "assets/link-solid.svg";
+export { ReactComponent as TagIcon } from "assets/tag-solid.svg";
+export { ReactComponent as SearchIcon } from "assets/magnifying-glass-solid.svg";

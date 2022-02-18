@@ -3,16 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fuse.js": "^6.5.3",
+    "lodash": "^4.17.21",
+    "luxon": "^2.3.0",
+    "netlify-cms-app": "^2.15.66",
     "netlify-identity-widget": "^1.9.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-remark": "^2.1.0",
     "react-router-dom": "^6.2.1",
     "use-http": "^1.0.26"
   },
   "scripts": {
-    "build": "react-app-rewired build",
-    "build-css": "npx tailwindcss -i ./src/index.css -o ./public/admin/index.css",
-    "build-all": "npm run build-css && npm run build",
+    "build": "concurrently \"npm:build-*\" && react-app-rewired build",
+    "build-css": "tailwindcss -i ./src/index.css -o ./public/admin/index.css",
+    "build-posts-index": "node scripts/build-posts-index.js",
+    "cms-proxy": "npx netlify-cms-proxy-server",
     "eject": "react-app-rewired eject",
     "start": "react-app-rewired start",
     "test": "react-app-rewired test"
@@ -40,6 +46,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.2",
+    "concurrently": "^7.0.0",
     "postcss": "^8.4.6",
     "react-app-rewire-multiple-entry": "^2.2.1",
     "react-app-rewired": "^2.1.11",

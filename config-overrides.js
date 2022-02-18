@@ -1,4 +1,3 @@
-
 const multipleEntry = require("react-app-rewire-multiple-entry")([
   {
     entry: "src/cms",
@@ -36,6 +35,12 @@ module.exports = function override(config) {
     DEPLOY_PRIME_URL: JSON.stringify(process.env.DEPLOY_PRIME_URL),
     BRANCH: JSON.stringify(process.env.BRANCH),
   };
-  
+
+  config.externals = {
+    react: "React",
+    "react-dom": "ReactDOM",
+    "netlify-cms-app": "NetlifyCmsApp",
+  };
+
   return config;
 };

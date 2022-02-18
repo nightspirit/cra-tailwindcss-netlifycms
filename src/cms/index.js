@@ -1,5 +1,4 @@
-import CMS from "netlify-cms-app";
-
+import CMS from 'netlify-cms-app';
 import withEntry from "utils/withEntry";
 import Home from "routes/Home";
 import { PostBody } from "routes/Blog/Post";

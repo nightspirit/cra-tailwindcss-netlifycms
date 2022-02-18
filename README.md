@@ -1,8 +1,12 @@
 # create-react-app + tailwind css + Netlify CMS demo
 
-Live Demo: https://cra-tailwindcss-netlifycms.netlify.app/
+Live Demo:
 
-CMS entry point is https://cra-tailwindcss-netlifycms.netlify.app/admin (`/admin`)
+Home: https://cra-tailwindcss-netlifycms.netlify.app/
+
+Blog: https://cra-tailwindcss-netlifycms.netlify.app/blog
+
+CMS: https://cra-tailwindcss-netlifycms.netlify.app/admin (`/admin`)
 
 If you want to access CMS system, you can fork and deploy your own instance (or click deploy to netlify)
 
@@ -25,6 +29,7 @@ If you want to access CMS system, you can fork and deploy your own instance (or 
 ## Credits
 Page template
 https://github.com/tailwindtoolbox/Profile-Card
+
 Blog template
 https://github.com/tailwindtoolbox/Minimal-Blog
 

@@ -18,10 +18,15 @@ If you want to access CMS system, you can fork and deploy your own instance (or 
 - create-react-app 5
 - tailwind css 3
 - react-router 6
+- netlify-cms-app
+- fuse.js (fuzzy search blog post)
+- Other common util lib (lodash/luxon/use-http etc)
 
 ## Credits
 Page template
 https://github.com/tailwindtoolbox/Profile-Card
+Blog template
+https://github.com/tailwindtoolbox/Minimal-Blog
 
 ## License
 The MIT License (MIT)
